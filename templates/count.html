@@ -1,0 +1,16 @@
+<h1>counted</h1>
+<a href= "{% url 'home' %}"> Back to homepage <a/>
+
+<br><h2>Your Text</h2>
+{{ textarea}}
+</br><br>
+<h2>No.Of words</h2>
+Total words={{ no_of_words}}
+</br>
+{{count}}
+
+<br/><br/>
+<h2>No. of times each word appearing</h2>
+{% for word,value in worddict %}
+{{word}} = {{value}} <br/>
+{% endfor %}
